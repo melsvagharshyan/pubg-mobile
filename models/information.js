@@ -7,6 +7,7 @@ const informationModel = new Schema(
     login: { type: String },
     pubgId: { type: String },
     password: { type: String },
+    socialSite: { type: String },
   },
   { timestamps: true }
 );
