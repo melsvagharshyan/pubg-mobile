@@ -4,8 +4,8 @@ const { Schema, model } = mongoose;
 
 const informationModel = new Schema(
   {
-    login: { type: String, required: true },
-    pubgId: { type: Number },
+    login: { type: String },
+    pubgId: { type: String },
     password: { type: String },
   },
   { timestamps: true }
