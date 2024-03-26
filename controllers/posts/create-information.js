@@ -28,7 +28,7 @@ export const getInformation = async (req, res) => {
 };
 
 export const deleteInformation = async (req, res) => {
-  const { id } = req.params;
+  const id = req.params.id;
   try {
     await informationModel.findByIdAndDelete(id);
     res.status(200).json("deleted successfully");
