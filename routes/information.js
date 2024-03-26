@@ -9,6 +9,6 @@ const router = Router();
 
 router.post("/", createInformation);
 router.get("/", getInformation);
-router.delete("/delete/:id", deleteInformation);
+router.delete("/remove/:id", deleteInformation);
 
 export default router;
